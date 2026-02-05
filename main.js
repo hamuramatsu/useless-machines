@@ -13,22 +13,22 @@ canvas.height = 320;
 
 // image list
 const images = [
-    "/photos/doge_original.jpg",
-    "/photos/doge_copy.png",
-    "/photos/doge_screenshot.jpg",
-    "/photos/doge_compressed.jpg",
-    "/photos/doge_scan_photocopy.jpg",
-    "/photos/doge_againnn.png",
-    "/photos/doge_meme_edit_v2.png",
-    "/photos/doge_meme_edit_final_FINAL.png",
-    "/photos/doge_compressed_v7.png",
-    "/photos/doge_uploaded_recompressed.jpg",
-    "/photos/doge_upscaled.jpg",
-    "/photos/doge_upscaled_another_time.jpg",
-    "/photos/dOgE_enhanced~~.webp",
-    "/photos/doge_stock_001329.png",
-    "/photos/doge_gettyimages_198700.png",
-    "/photos/re-sampled_doGE.png"
+    "photos/doge_original.jpg",
+    "photos/doge_copy.png",
+    "photos/doge_screenshot.jpg",
+    "photos/doge_compressed.jpg",
+    "photos/doge_scan_photocopy.jpg",
+    "photos/doge_againnn.png",
+    "photos/doge_meme_edit_v2.png",
+    "photos/doge_meme_edit_final_FINAL.png",
+    "photos/doge_compressed_v7.png",
+    "photos/doge_uploaded_recompressed.jpg",
+    "photos/doge_upscaled.jpg",
+    "photos/doge_upscaled_another_time.jpg",
+    "photos/dOgE_enhanced~~.webp",
+    "photos/doge_stock_001329.png",
+    "photos/doge_gettyimages_198700.png",
+    "photos/re-sampled_doGE.png"
 ];
 
 let imgIndex = 0;

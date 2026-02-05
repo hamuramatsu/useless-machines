@@ -4,7 +4,7 @@ body {
     height: 100vh;
     font-family: monospace;
     background: white;
-    background-image: url("/photos/display.png");
+    background-image: url("photos/display.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
