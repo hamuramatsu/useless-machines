@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: monospace;
+    background: white;
+    background-image: url("/photos/display.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    gap: 4rem;
+    padding: 4rem;
+}
+
+.machine {
+    max-width: 500px;
+}
+
+canvas, img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#filename {
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+}
+
+.image-frame {
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+}
+
+.image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
