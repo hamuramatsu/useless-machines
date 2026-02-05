@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>In Defense of the Poor Image</title>
     <link rel="stylesheet" href="style.css">
-    <script src="circulation.js" defer></script>
-    <script src="interaction.js" defer></script>
+    <script src="main.js" defer></script>
 </head>
-<body>
-    <main>
-    <section class="machine">
-      <h2>Circulated Image</h2>
-      <div class="image-frame">
-        <canvas id="circulationCanvas"></canvas>
-      </div>
-    </section>
 
-    <section class="machine">
-      <h2>Interacted Image</h2>
-      <div class="image-frame">
-        <img id="interactionImg" />
-      </div>
-      <p id="filename"></p>
-    </section>
-  </main>
+<body>
+  <!-- <h1>the poor image</h1> -->
+  <div id="screen">
+    <canvas id="dogeCanvas"></canvas>
+
+    <div id="controls" class="hidden">
+      <button id="closeButton">✕</button>
+      <button id="nextButton">→</button>
+    </div>
+  </div>
+
+  <p id="filename" class="hidden"></p>
+  <!-- <p id="filename2" class="hidden"></p> -->
+   
+  <div id="mosaic" class="hidden"></div>
+
 </body>
 </html>
+

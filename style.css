@@ -12,38 +12,97 @@ body {
     justify-content: center;
     align-items: center;
 }
+/* 
+#screen {
+    width: 320px;
+    height: auto;
+    position: relative;
+} */
 
-main {
-    display: flex;
-    gap: 4rem;
-    padding: 4rem;
+#screen {
+    width: 320px;
+    position: relative;
+    transform-origin: center center;
+    transition: transform 0.1s ease;
+    -webkit-transition: transform 0.1s ease;
+    -moz-transition: transform 0.1s ease;
+    -ms-transition: transform 0.1s ease;
+    -o-transition: transform 0.1s ease;
 }
 
-.machine {
-    max-width: 500px;
+#screen:hover {
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
 }
 
-canvas, img {
+#screen.open {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+}
+
+canvas {
     width: 100%;
     height: 100%;
     cursor: pointer;
 }
 
-#filename {
+
+#controls {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    gap: 8px;
+}
+
+#controls button {
     font-family: monospace;
-    font-size: 0.8rem;
-    color: #666;
-    text-align: center;
+    cursor: pointer;
 }
 
-.image-frame {
-    width: 400px;
-    height: auto;
+.hidden {
+    display: none;
+}
+
+#controls.visible {
+    display: flex;
+}
+
+#filename {
+    position: absolute;
+    margin-top: 24rem;
+    font-size: 1rem;
+    color: #666666;
+}
+/* 
+#filename2 {
+    position: absolute;
+    margin-top: 25.5rem;
+    font-size: 1rem;
+    color: #666666;
+} */
+
+
+#mosaic {
+    position: fixed;
+    inset: 0;
+    background: white;
     overflow: hidden;
+    z-index: 10;
 }
 
-.image-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+#mosaic.visible {
+    display: grid;
+}
+
+#mosaic img {
+    position: absolute;
+    object-fit: cover;
+    filter: blur(1px) contrast(1.1);
+    pointer-events: none;
 }
